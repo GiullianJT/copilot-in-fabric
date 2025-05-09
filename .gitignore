@@ -1,0 +1,4 @@
+# .gitignore at the repo root
+# ───────────────────────────
+# Ignore all files under docs/data
+/docs/data/**

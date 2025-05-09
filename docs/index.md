@@ -19,6 +19,9 @@ This course is designed to help you understand and leverage Microsoft Copilot wi
 - Basic familiarity with Microsoft Fabric
 - Access to a Microsoft Fabric workspace
 - Copilot enabled in the Fabric environment
+- Be sure to download the data! 
+> 💾 **One-click bundle:**  
+> [Download all sample data (ZIP, 49 MB)](../downloads/Data.zip)
 
 ## Course Outline
 
@@ -28,6 +31,4 @@ This course is designed to help you understand and leverage Microsoft Copilot wi
 4. **Automating Workflows with Copilot**
 5. **Advanced Scenarios and Tips**
 
----
 
-![Copilot and Fabric Logos](assets/img/copilot_logo.png)

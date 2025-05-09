@@ -26,21 +26,35 @@ Create a Lakehouse, import data, and tranform with a Dataflow Gen2
 4. Name it **lh_demo**, then click **Create**. !
 ![Lakehouse Creation](../assets/img/create_lakehouse.png)
 
-5. Upload the provided CSV or Parquet files into **/Files**.Right-click on the **/Files** folder in the Lakehouse and **Upload Folder**.
+5. Upload the provided **Data** folder ([download](../downloads/Data.zip) here) into **/Files**. Right-click on the **/Files** folder in the Lakehouse and **Upload Folder**.
+![Search Lakehouse](../assets/img/upload_folder.png)
+
 6. Select **Overwrite existing files** and then **Upload**.
 ![Overwrite Existing](../assets/img/overwrite_existing.png)
+![Search Lakehouse](../assets/img/upload_folder_now.png)
 
-7. Create a Dataflow Gen2 that will transform the data into tables for our semantic model. Click **New Item** and search for **Dataflow**.
+1. Create a Dataflow Gen2 that will transform the data into tables for our semantic model. Click **New Item** and search for **Dataflow**.
 ![Create New Item](../assets/img/create_item.png)
 ![Search Dataflow](../assets/img/search_dataflow.png)
 ![Select Dataflow](../assets/img/select_dataflow.png)
 
-8.  Generate a Semantic Model:  Lakehouse ► **New semantic model** ► select your tables ► **Create**.
+1. Import the **df_demo.pqt** file ([download](../downloads/df_demo.pqt) the template if needed)
+2. Configure the Lakehouse Connection by clicking on the yellow button. Then sign in if needed, and click create.
+![Configure Connection](../assets/img/configure_connection.png)
+
+1.  Update the **Source Files** query by clicking on the gear icon next to the last Navigation step and selecting the **Files** folder in the Lakehouse you created earlier.
+![Search Lakehouse](../assets/img/navigation_settings.png)
+![Search Lakehouse](../assets/img/change_lakehouse.png)
+
+1.  Add a **Default Data Destination** and bind the tables you see in the screenshot below:
+![Search Lakehouse](../assets/img/bind_tables.png)
+1.  Publish the dataflow.
+2.  Generate a Semantic Model:  Lakehouse ► **New semantic model** ► select your tables ► **Create**.
 ![New Semantic Model](../assets/img/new_semantic_model.png)
 ![Select Tables](../assets/img/select_tables.png)
 
-9.  Open **Model view**. Create 1‑many relationships to match the screenshot below:
+1.  Open **Model view**. Create 1‑many relationships to match the screenshot below:
 ![Semantic Model](../assets/img/semantic_model.png)
 
-10.   Use Copilot to create a report with the prompt: "Create me a report to show sales over time including both high-level and detailed information."
+1.    Use Copilot to create a report with the prompt: "Create me a report to show sales over time including both high-level and detailed information."
 ![Copilot Report](../assets/img/copilot_report_creation.png)  

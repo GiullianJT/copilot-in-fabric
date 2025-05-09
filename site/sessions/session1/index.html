@@ -504,11 +504,13 @@
 <img alt="Lakehouse Creation" src="../../assets/img/create_lakehouse.png" /></p>
 </li>
 <li>
-<p>Upload the provided CSV or Parquet files into <strong>/Files</strong>.Right-click on the <strong>/Files</strong> folder in the Lakehouse and <strong>Upload Folder</strong>.</p>
+<p>Upload the provided <strong>Data</strong> folder (<a href="../../downloads/Data.zip">download</a> here) into <strong>/Files</strong>. Right-click on the <strong>/Files</strong> folder in the Lakehouse and <strong>Upload Folder</strong>.
+<img alt="Search Lakehouse" src="../../assets/img/upload_folder.png" /></p>
 </li>
 <li>
 <p>Select <strong>Overwrite existing files</strong> and then <strong>Upload</strong>.
-<img alt="Overwrite Existing" src="../../assets/img/overwrite_existing.png" /></p>
+<img alt="Overwrite Existing" src="../../assets/img/overwrite_existing.png" />
+<img alt="Search Lakehouse" src="../../assets/img/upload_folder_now.png" /></p>
 </li>
 <li>
 <p>Create a Dataflow Gen2 that will transform the data into tables for our semantic model. Click <strong>New Item</strong> and search for <strong>Dataflow</strong>.
@@ -516,6 +518,23 @@
 <img alt="Search Dataflow" src="../../assets/img/search_dataflow.png" />
 <img alt="Select Dataflow" src="../../assets/img/select_dataflow.png" /></p>
 </li>
+<li>
+<p>Import the <strong>df_demo.pqt</strong> file (<a href="../../downloads/df_demo.pqt">download</a> the template if needed)</p>
+</li>
+<li>
+<p>Configure the Lakehouse Connection by clicking on the yellow button. Then sign in if needed, and click create.
+<img alt="Configure Connection" src="../../assets/img/configure_connection.png" /></p>
+</li>
+<li>
+<p>Update the <strong>Source Files</strong> query by clicking on the gear icon next to the last Navigation step and selecting the <strong>Files</strong> folder in the Lakehouse you created earlier.
+<img alt="Search Lakehouse" src="../../assets/img/navigation_settings.png" />
+<img alt="Search Lakehouse" src="../../assets/img/change_lakehouse.png" /></p>
+</li>
+<li>
+<p>Add a <strong>Default Data Destination</strong> and bind the tables you see in the screenshot below:
+<img alt="Search Lakehouse" src="../../assets/img/bind_tables.png" /></p>
+</li>
+<li>Publish the dataflow.</li>
 <li>
 <p>Generate a Semantic Model:  Lakehouse ► <strong>New semantic model</strong> ► select your tables ► <strong>Create</strong>.
 <img alt="New Semantic Model" src="../../assets/img/new_semantic_model.png" />
