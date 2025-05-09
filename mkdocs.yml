@@ -2,14 +2,14 @@ site_name: Fabric Copilot Lab
 repo_url: https://github.com/GiullianJT/copilot-in-fabric
 theme:
   name: material
-  logo: docs/assets/img/journeyteam_logo.png   # optional
+  logo: assets/img/journeyteam_logo.png   # optional
 nav:
   - Home: index.md            # will live in docs/index.md
   - Sessions:
       - Session 1: sessions/session1.md
       - Session 2: sessions/session2.md
-      - Session 3: sessions/session3.md
-plugins:
-  - search
-  - pdf-export        # exports every page to /pdf/
+      - Session 3: sessions/session3.mdmkdocs
+# plugins:
+#   - search
+#   - pdf-export        # exports every page to /pdf/
 
