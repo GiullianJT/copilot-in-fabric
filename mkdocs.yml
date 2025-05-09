@@ -1,0 +1,11 @@
+site_name: Fabric Copilot Lab
+repo_url: https://github.com/<your-org>/journeyteam-fabric-lab
+theme:
+  name: material
+  logo: assets/img/logo.png   # optional
+nav:
+  - Home: index.md            # will live in docs/index.md
+  - Sessions:
+      - Session 1: sessions/session1.md
+      - Session 2: sessions/session2.md
+      - Session 3: sessions/session3.md
