@@ -1,8 +1,8 @@
 site_name: Fabric Copilot Lab
-repo_url: https://github.com/<your-org>/journeyteam-fabric-lab
+repo_url: https://github.com/GiullianJT/copilot-in-fabric
 theme:
   name: material
-  logo: assets/img/journeyteam_logo.png   # optional
+  logo: docs/assets/img/journeyteam_logo.png   # optional
 nav:
   - Home: index.md            # will live in docs/index.md
   - Sessions:
