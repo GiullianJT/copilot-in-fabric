@@ -9,10 +9,6 @@
       
       
       
-        <link rel="prev" href="../..">
-      
-      
-        <link rel="next" href="../session2/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +16,7 @@
     
     
       
-        <title>Session 1 - Fabric Copilot Lab</title>
+        <title>Examples - Fabric Copilot Lab</title>
       
     
     
@@ -61,11 +57,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#session-1-foundation-fabric-copilot-60-min" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -97,7 +88,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Session 1
+              Examples
             
           </span>
         </div>
@@ -235,20 +226,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -264,7 +253,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Sessions
@@ -275,32 +264,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Session 1
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../session1/" class="md-nav__link">
         
   
   
@@ -311,44 +278,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#demo-of-copilot-in-fabric" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demo of Copilot in Fabric
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-sourcing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Sourcing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -424,34 +353,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#demo-of-copilot-in-fabric" class="md-nav__link">
-    <span class="md-ellipsis">
-      Demo of Copilot in Fabric
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-sourcing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Data Sourcing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -470,66 +371,9 @@
   
 
 
-<h1 id="session-1-foundation-fabric-copilot-60-min">Session 1 – Foundation: Fabric &amp; Copilot (60 min)</h1>
-<h3 id="demo-of-copilot-in-fabric">Demo of Copilot in Fabric</h3>
-<p>Follow along in your own environment or just watch.</p>
-<ol>
-<li>
-<p>Locate the Copilot icon on the left navigation rail and the one inside Lakehouse/Notebook experiences. Confirm they both exist. 
-<img alt="Copilot in Lakehouse" src="../../assets/img/copilot_in_lakehouse.png" /></p>
-</li>
-<li>
-<p>In Power BI Service, open any existing report and open the Copilot pane (“Ask data questions”) to see Copilot inside reports. 
-<img alt="Copilot for Report Creation" src="../../assets/img/copilot_report_creation.png" /></p>
-</li>
-</ol>
-<h3 id="data-sourcing">Data Sourcing</h3>
-<p>Create a Lakehouse, import data, and tranform with a Dataflow Gen2</p>
-<ol>
-<li>
-<p>Navigate to the workspace list and select the My Workspace.
-<img alt="Workspace Navigation" src="../../assets/img/workspace_navigation.png" /></p>
-</li>
-<li>
-<p>Create a Lakehouse:  New ► Lakehouse, name it <strong>lh_demo</strong>, then click <strong>Create</strong>. !
-<img alt="Create New Item" src="../../assets/img/create_item.png" /></p>
-</li>
-<li>
-<p>Search for <strong>Lakehouse</strong> and select the Lakehouse option
-<img alt="Search Lakehouse" src="../../assets/img/search_lakehouse.png" />
-<img alt="Select Lakehouse" src="../../assets/img/select_lakehouse.png" /></p>
-</li>
-<li>
-<p>Name it <strong>lh_demo</strong>, then click <strong>Create</strong>. !
-<img alt="Lakehouse Creation" src="../../assets/img/create_lakehouse.png" /></p>
-</li>
-<li>
-<p>Upload the provided CSV or Parquet files into <strong>/Files</strong>.Right-click on the <strong>/Files</strong> folder in the Lakehouse and <strong>Upload Folder</strong>.</p>
-</li>
-<li>
-<p>Select <strong>Overwrite existing files</strong> and then <strong>Upload</strong>.
-<img alt="Overwrite Existing" src="../../assets/img/overwrite_existing.png" /></p>
-</li>
-<li>
-<p>Create a Dataflow Gen2 that will transform the data into tables for our semantic model. Click <strong>New Item</strong> and search for <strong>Dataflow</strong>.
-<img alt="Create New Item" src="../../assets/img/create_item.png" />
-<img alt="Search Dataflow" src="../../assets/img/search_dataflow.png" />
-<img alt="Select Dataflow" src="../../assets/img/select_dataflow.png" /></p>
-</li>
-<li>
-<p>Generate a Semantic Model:  Lakehouse ► <strong>New semantic model</strong> ► select your tables ► <strong>Create</strong>.
-<img alt="New Semantic Model" src="../../assets/img/new_semantic_model.png" />
-<img alt="Select Tables" src="../../assets/img/select_tables.png" /></p>
-</li>
-<li>
-<p>Open <strong>Model view</strong>. Create 1‑many relationships to match the screenshot below:
-<img alt="Semantic Model" src="../../assets/img/semantic_model.png" /></p>
-</li>
-<li>
-<p>Use Copilot to create a report with the prompt: "Create me a report to show sales over time including both high-level and detailed information."
-<img alt="Copilot Report" src="../../assets/img/copilot_report_creation.png" />  </p>
-</li>
-</ol>
+  <h1>Examples</h1>
+
+
 
 
 
