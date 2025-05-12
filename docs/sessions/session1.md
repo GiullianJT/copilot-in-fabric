@@ -49,7 +49,7 @@ Create a Lakehouse, import data, and tranform with a Dataflow Gen2
 1.  Add a **Default Data Destination** and bind the tables you see in the screenshot below:
 ![Search Lakehouse](../assets/img/bind_tables.png)
 1.  Publish the dataflow.
-2.  Generate a Semantic Model:  Lakehouse ► **New semantic model** ► select your tables ► **Create**.
+2.  Generate a Semantic Model:  Lakehouse ► **New semantic model** ► select your tables ► **Create**. Name the new model **direct lake demo**.
 ![New Semantic Model](../assets/img/new_semantic_model.png)
 ![Select Tables](../assets/img/select_tables.png)
 

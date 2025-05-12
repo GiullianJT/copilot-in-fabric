@@ -5,7 +5,7 @@
     ![Power BI Desktop](../assets/img/desktop_login.png)
     ![Desktop Copilot](../assets/img/desktop_copilot.png)
 
-2. Connect to the semantic model you just published: **OneLake catalog** ► select **lh_demo** (make sure it is the semantic model).
+2. Connect to the semantic model you just published: **OneLake catalog** ► select **direct lake demo** (make sure it is the semantic model).
 
     ![OneLake Catalog](../assets/img/onelake_catalog.png)
     ![Select Model](../assets/img/select_model.png)
