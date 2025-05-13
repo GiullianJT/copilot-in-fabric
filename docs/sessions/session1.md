@@ -1,60 +1,121 @@
-# Session 1 – Foundation: Fabric & Copilot (60 min)
+# Session 1 – Foundation: Fabric & Copilot (60 min)
+
+## Session Overview
+
+In this session, you will get hands-on experience with Microsoft Fabric and Copilot. You’ll create a Lakehouse, import data, transform it with Dataflow Gen2, and generate a semantic model for analytics.
+
+---
+
+## Step-by-Step Instructions
 
 ### Demo of Copilot in Fabric
+
 Follow along in your own environment or just watch.
 
-1. Locate the Copilot icon on the left navigation rail and the one inside Lakehouse/Notebook experiences. Confirm they both exist. 
-![Copilot in Lakehouse](../assets/img/copilot_in_lakehouse.png)
+1. **Locate the Copilot icon** on the left navigation rail and inside Lakehouse/Notebook experiences. Confirm both exist.
 
-2. In Power BI Service, open any existing report and open the Copilot pane (“Ask data questions”) to see Copilot inside reports. 
-![Copilot for Report Creation](../assets/img/copilot_report_creation.png)
+    ![Copilot in Lakehouse navigation](../assets/img/copilot_in_lakehouse.png)
 
+2. **Open Copilot in Power BI Service.**  
+   Open any existing report and open the Copilot pane (“Ask data questions”) to see Copilot inside reports.
 
-### Data Sourcing 
-Create a Lakehouse, import data, and tranform with a Dataflow Gen2
- 
-1. Navigate to the workspace list and select the My Workspace.
-![Workspace Navigation](../assets/img/workspace_navigation.png)
+    ![Copilot for Report Creation in Power BI](../assets/img/copilot_report_creation.png)
 
-2. Create a Lakehouse:  New ► Lakehouse, name it **lh_demo**, then click **Create**. !
-![Create New Item](../assets/img/create_item.png)
+---
 
-3. Search for **Lakehouse** and select the Lakehouse option
-![Search Lakehouse](../assets/img/search_lakehouse.png)
-![Select Lakehouse](../assets/img/select_lakehouse.png)
+### Data Sourcing
 
-4. Name it **lh_demo**, then click **Create**. !
-![Lakehouse Creation](../assets/img/create_lakehouse.png)
+Create a Lakehouse, import data, and transform it with a Dataflow Gen2.
 
-5. Upload the provided **Data** folder ([download](../downloads/Data.zip) here) into **/Files**. Right-click on the **/Files** folder in the Lakehouse and **Upload Folder**.
-![Search Lakehouse](../assets/img/upload_folder.png)
+3. **Navigate to the workspace list** and select **My Workspace**.
 
-6. Select **Overwrite existing files** and then **Upload**.
-![Overwrite Existing](../assets/img/overwrite_existing.png)
-![Search Lakehouse](../assets/img/upload_folder_now.png)
+    ![Workspace Navigation](../assets/img/workspace_navigation.png)
 
-1. Create a Dataflow Gen2 that will transform the data into tables for our semantic model. Click **New Item** and search for **Dataflow**.
-![Create New Item](../assets/img/create_item.png)
-![Search Dataflow](../assets/img/search_dataflow.png)
-![Select Dataflow](../assets/img/select_dataflow.png)
+4. **Create a Lakehouse:**  
+   Click **New ► Lakehouse**, name it **lh_demo**, then click **Create**.
 
-1. Import the **df_demo.pqt** file ([download](../downloads/df_demo.pqt) the template if needed)
-2. Configure the Lakehouse Connection by clicking on the yellow button. Then sign in if needed, and click create.
-![Configure Connection](../assets/img/configure_connection.png)
+    ![Create New Item](../assets/img/create_item.png)
 
-1.  Update the **Source Files** query by clicking on the gear icon next to the last Navigation step and selecting the **Files** folder in the Lakehouse you created earlier.
-![Search Lakehouse](../assets/img/navigation_settings.png)
-![Search Lakehouse](../assets/img/change_lakehouse.png)
+5. **Search for "Lakehouse"** and select the Lakehouse option.
 
-1.  Add a **Default Data Destination** and bind the tables you see in the screenshot below:
-![Search Lakehouse](../assets/img/bind_tables.png)
-1.  Publish the dataflow.
-2.  Generate a Semantic Model:  Lakehouse ► **New semantic model** ► select your tables ► **Create**. Name the new model **direct lake demo**.
-![New Semantic Model](../assets/img/new_semantic_model.png)
-![Select Tables](../assets/img/select_tables.png)
+    ![Search Lakehouse](../assets/img/search_lakehouse.png)
+    ![Select Lakehouse](../assets/img/select_lakehouse.png)
 
-1.  Open **Model view**. Create 1‑many relationships to match the screenshot below:
-![Semantic Model](../assets/img/semantic_model.png)
+6. **Name it `lh_demo`** and click **Create**.
 
-1.    Use Copilot to create a report with the prompt: "Create me a report to show sales over time including both high-level and detailed information."
-![Copilot Report](../assets/img/copilot_report_creation.png)  
+    ![Lakehouse Creation](../assets/img/create_lakehouse.png)
+
+7. **Upload the provided Data folder**  
+   [Download here](../downloads/Content.zip) and upload into **/Files**.  
+   Right-click on the **/Files** folder in the Lakehouse and select **Upload Folder**.
+
+    ![Upload Folder](../assets/img/upload_folder.png)
+
+8. **Select "Overwrite existing files"** and then click **Upload**.
+
+    ![Overwrite Existing Files](../assets/img/overwrite_existing.png)
+    ![Upload Folder Now](../assets/img/upload_folder_now.png)
+
+9. **Create a Dataflow Gen2**  
+   Click **New Item** and search for **Dataflow**.
+
+    ![Create New Item for Dataflow](../assets/img/create_item.png)
+    ![Search Dataflow](../assets/img/search_dataflow.png)
+    ![Select Dataflow](../assets/img/select_dataflow.png)
+
+10. **Import the `df_demo.pqt` file**  
+    [Download the template](../downloads/df_demo.pqt) if needed.
+
+11. **Configure the Lakehouse Connection**  
+    Click the yellow button, sign in if needed, and click **Create**.
+
+    ![Configure Connection](../assets/img/configure_connection.png)
+
+12. **Update the Source Files query**  
+    Click the gear icon next to the last Navigation step and select the **Files** folder in the Lakehouse you created earlier.
+
+    ![Navigation Settings](../assets/img/navigation_settings.png)
+    ![Change Lakehouse](../assets/img/change_lakehouse.png)
+
+13. **Add a Default Data Destination**  
+    Bind the tables as shown in the screenshot below.
+
+    ![Bind Tables](../assets/img/bind_tables.png)
+
+14. **Publish the dataflow.**
+
+15. **Generate a Semantic Model**  
+    In the Lakehouse, click **New semantic model**, select your tables, and click **Create**. Name the new model **direct lake demo**.
+
+    ![New Semantic Model](../assets/img/new_semantic_model.png)
+    ![Select Tables](../assets/img/select_tables.png)
+
+16. **Open Model view**  
+    Create 1‑many relationships to match the screenshot below.
+
+    ![Semantic Model Relationships](../assets/img/semantic_model.png)
+
+17. **Use Copilot to create a report**  
+    Prompt:  
+    `"Create me a report to show sales over time including both high-level and detailed information."`
+
+    ![Copilot Report Creation](../assets/img/copilot_report_creation.png)
+
+---
+
+## Reflection
+
+- **Checkpoint:** Review your Lakehouse, Dataflow, and Semantic Model with your group.  
+- **Discuss:** What worked well? Where did you encounter challenges?  
+- **Prepare:** Bring your questions and findings to the next session.
+
+---
+
+**Tips for Success:**
+- If you get stuck, ask your instructor or a classmate for help.
+- Pause at checkpoints to review your progress.
+- Share your screen if you need troubleshooting assistance.
+
+---
+
+Let your instructor know if you need further clarification or support!
