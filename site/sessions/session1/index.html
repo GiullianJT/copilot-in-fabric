@@ -328,6 +328,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#session-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#demo-of-copilot-in-fabric" class="md-nav__link">
     <span class="md-ellipsis">
       Demo of Copilot in Fabric
@@ -335,11 +354,25 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#data-sourcing" class="md-nav__link">
     <span class="md-ellipsis">
       Data Sourcing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
     </span>
   </a>
   
@@ -434,6 +467,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#session-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Instructions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#demo-of-copilot-in-fabric" class="md-nav__link">
     <span class="md-ellipsis">
       Demo of Copilot in Fabric
@@ -441,11 +493,25 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#data-sourcing" class="md-nav__link">
     <span class="md-ellipsis">
       Data Sourcing
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection
     </span>
   </a>
   
@@ -470,85 +536,119 @@
   
 
 
-<h1 id="session-1-foundation-fabric-copilot-60-min">Session 1 – Foundation: Fabric &amp; Copilot (60 min)</h1>
+<h1 id="session-1-foundation-fabric-copilot-60-min">Session 1 – Foundation: Fabric &amp; Copilot (60 min)</h1>
+<h2 id="session-overview">Session Overview</h2>
+<p>In this session, you will get hands-on experience with Microsoft Fabric and Copilot. You’ll create a Lakehouse, import data, transform it with Dataflow Gen2, and generate a semantic model for analytics.</p>
+<hr />
+<h2 id="step-by-step-instructions">Step-by-Step Instructions</h2>
 <h3 id="demo-of-copilot-in-fabric">Demo of Copilot in Fabric</h3>
 <p>Follow along in your own environment or just watch.</p>
 <ol>
 <li>
-<p>Locate the Copilot icon on the left navigation rail and the one inside Lakehouse/Notebook experiences. Confirm they both exist. 
-<img alt="Copilot in Lakehouse" src="../../assets/img/copilot_in_lakehouse.png" /></p>
+<p><strong>Locate the Copilot icon</strong> on the left navigation rail and inside Lakehouse/Notebook experiences. Confirm both exist.</p>
+<p><img alt="Copilot in Lakehouse navigation" src="../../assets/img/copilot_in_lakehouse.png" /></p>
 </li>
 <li>
-<p>In Power BI Service, open any existing report and open the Copilot pane (“Ask data questions”) to see Copilot inside reports. 
-<img alt="Copilot for Report Creation" src="../../assets/img/copilot_report_creation.png" /></p>
+<p><strong>Open Copilot in Power BI Service.</strong><br />
+   Open any existing report and open the Copilot pane (“Ask data questions”) to see Copilot inside reports.</p>
+<p><img alt="Copilot for Report Creation in Power BI" src="../../assets/img/copilot_report_creation.png" /></p>
 </li>
 </ol>
+<hr />
 <h3 id="data-sourcing">Data Sourcing</h3>
-<p>Create a Lakehouse, import data, and tranform with a Dataflow Gen2</p>
+<p>Create a Lakehouse, import data, and transform it with a Dataflow Gen2.</p>
 <ol>
 <li>
-<p>Navigate to the workspace list and select the My Workspace.
-<img alt="Workspace Navigation" src="../../assets/img/workspace_navigation.png" /></p>
+<p><strong>Navigate to the workspace list</strong> and select <strong>My Workspace</strong>.</p>
+<p><img alt="Workspace Navigation" src="../../assets/img/workspace_navigation.png" /></p>
 </li>
 <li>
-<p>Create a Lakehouse:  New ► Lakehouse, name it <strong>lh_demo</strong>, then click <strong>Create</strong>. !
-<img alt="Create New Item" src="../../assets/img/create_item.png" /></p>
+<p><strong>Create a Lakehouse:</strong><br />
+   Click <strong>New ► Lakehouse</strong>, name it <strong>lh_demo</strong>, then click <strong>Create</strong>.</p>
+<p><img alt="Create New Item" src="../../assets/img/create_item.png" /></p>
 </li>
 <li>
-<p>Search for <strong>Lakehouse</strong> and select the Lakehouse option
-<img alt="Search Lakehouse" src="../../assets/img/search_lakehouse.png" />
+<p><strong>Search for "Lakehouse"</strong> and select the Lakehouse option.</p>
+<p><img alt="Search Lakehouse" src="../../assets/img/search_lakehouse.png" />
 <img alt="Select Lakehouse" src="../../assets/img/select_lakehouse.png" /></p>
 </li>
 <li>
-<p>Name it <strong>lh_demo</strong>, then click <strong>Create</strong>. !
-<img alt="Lakehouse Creation" src="../../assets/img/create_lakehouse.png" /></p>
+<p><strong>Name it <code>lh_demo</code></strong> and click <strong>Create</strong>.</p>
+<p><img alt="Lakehouse Creation" src="../../assets/img/create_lakehouse.png" /></p>
 </li>
 <li>
-<p>Upload the provided <strong>Data</strong> folder (<a href="../../downloads/Data.zip">download</a> here) into <strong>/Files</strong>. Right-click on the <strong>/Files</strong> folder in the Lakehouse and <strong>Upload Folder</strong>.
-<img alt="Search Lakehouse" src="../../assets/img/upload_folder.png" /></p>
+<p><strong>Upload the provided Data folder</strong><br />
+<a href="../../downloads/Content.zip">Download here</a> and upload into <strong>/Files</strong>.<br />
+   Right-click on the <strong>/Files</strong> folder in the Lakehouse and select <strong>Upload Folder</strong>.</p>
+<p><img alt="Upload Folder" src="../../assets/img/upload_folder.png" /></p>
 </li>
 <li>
-<p>Select <strong>Overwrite existing files</strong> and then <strong>Upload</strong>.
-<img alt="Overwrite Existing" src="../../assets/img/overwrite_existing.png" />
-<img alt="Search Lakehouse" src="../../assets/img/upload_folder_now.png" /></p>
+<p><strong>Select "Overwrite existing files"</strong> and then click <strong>Upload</strong>.</p>
+<p><img alt="Overwrite Existing Files" src="../../assets/img/overwrite_existing.png" />
+<img alt="Upload Folder Now" src="../../assets/img/upload_folder_now.png" /></p>
 </li>
 <li>
-<p>Create a Dataflow Gen2 that will transform the data into tables for our semantic model. Click <strong>New Item</strong> and search for <strong>Dataflow</strong>.
-<img alt="Create New Item" src="../../assets/img/create_item.png" />
+<p><strong>Create a Dataflow Gen2</strong><br />
+   Click <strong>New Item</strong> and search for <strong>Dataflow</strong>.</p>
+<p><img alt="Create New Item for Dataflow" src="../../assets/img/create_item.png" />
 <img alt="Search Dataflow" src="../../assets/img/search_dataflow.png" />
 <img alt="Select Dataflow" src="../../assets/img/select_dataflow.png" /></p>
 </li>
 <li>
-<p>Import the <strong>df_demo.pqt</strong> file (<a href="../../downloads/df_demo.pqt">download</a> the template if needed)</p>
+<p><strong>Import the <code>df_demo.pqt</code> file</strong><br />
+<a href="../../downloads/df_demo.pqt">Download the template</a> if needed.</p>
 </li>
 <li>
-<p>Configure the Lakehouse Connection by clicking on the yellow button. Then sign in if needed, and click create.
-<img alt="Configure Connection" src="../../assets/img/configure_connection.png" /></p>
+<p><strong>Configure the Lakehouse Connection</strong><br />
+    Click the yellow button, sign in if needed, and click <strong>Create</strong>.</p>
+<p><img alt="Configure Connection" src="../../assets/img/configure_connection.png" /></p>
 </li>
 <li>
-<p>Update the <strong>Source Files</strong> query by clicking on the gear icon next to the last Navigation step and selecting the <strong>Files</strong> folder in the Lakehouse you created earlier.
-<img alt="Search Lakehouse" src="../../assets/img/navigation_settings.png" />
-<img alt="Search Lakehouse" src="../../assets/img/change_lakehouse.png" /></p>
+<p><strong>Update the Source Files query</strong><br />
+    Click the gear icon next to the last Navigation step and select the <strong>Files</strong> folder in the Lakehouse you created earlier.</p>
+<p><img alt="Navigation Settings" src="../../assets/img/navigation_settings.png" />
+<img alt="Change Lakehouse" src="../../assets/img/change_lakehouse.png" /></p>
 </li>
 <li>
-<p>Add a <strong>Default Data Destination</strong> and bind the tables you see in the screenshot below:
-<img alt="Search Lakehouse" src="../../assets/img/bind_tables.png" /></p>
+<p><strong>Add a Default Data Destination</strong><br />
+    Bind the tables as shown in the screenshot below.</p>
+<p><img alt="Bind Tables" src="../../assets/img/bind_tables.png" /></p>
 </li>
-<li>Publish the dataflow.</li>
 <li>
-<p>Generate a Semantic Model:  Lakehouse ► <strong>New semantic model</strong> ► select your tables ► <strong>Create</strong>.
-<img alt="New Semantic Model" src="../../assets/img/new_semantic_model.png" />
+<p><strong>Publish the dataflow.</strong></p>
+</li>
+<li>
+<p><strong>Generate a Semantic Model</strong><br />
+    In the Lakehouse, click <strong>New semantic model</strong>, select your tables, and click <strong>Create</strong>. Name the new model <strong>direct lake demo</strong>.</p>
+<p><img alt="New Semantic Model" src="../../assets/img/new_semantic_model.png" />
 <img alt="Select Tables" src="../../assets/img/select_tables.png" /></p>
 </li>
 <li>
-<p>Open <strong>Model view</strong>. Create 1‑many relationships to match the screenshot below:
-<img alt="Semantic Model" src="../../assets/img/semantic_model.png" /></p>
+<p><strong>Open Model view</strong><br />
+    Create 1‑many relationships to match the screenshot below.</p>
+<p><img alt="Semantic Model Relationships" src="../../assets/img/semantic_model.png" /></p>
 </li>
 <li>
-<p>Use Copilot to create a report with the prompt: "Create me a report to show sales over time including both high-level and detailed information."
-<img alt="Copilot Report" src="../../assets/img/copilot_report_creation.png" />  </p>
+<p><strong>Use Copilot to create a report</strong><br />
+    Prompt:<br />
+<code>"Create me a report to show sales over time including both high-level and detailed information."</code></p>
+<p><img alt="Copilot Report Creation" src="../../assets/img/copilot_report_creation.png" /></p>
 </li>
 </ol>
+<hr />
+<h2 id="reflection">Reflection</h2>
+<ul>
+<li><strong>Checkpoint:</strong> Review your Lakehouse, Dataflow, and Semantic Model with your group.  </li>
+<li><strong>Discuss:</strong> What worked well? Where did you encounter challenges?  </li>
+<li><strong>Prepare:</strong> Bring your questions and findings to the next session.</li>
+</ul>
+<hr />
+<p><strong>Tips for Success:</strong>
+- If you get stuck, ask your instructor or a classmate for help.
+- Pause at checkpoints to review your progress.
+- Share your screen if you need troubleshooting assistance.</p>
+<hr />
+<p>Let your instructor know if you need further clarification or support!</p>
 
 
 

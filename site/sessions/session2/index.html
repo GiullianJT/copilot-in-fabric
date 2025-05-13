@@ -310,6 +310,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Session 2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -321,6 +334,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Instructions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -377,6 +427,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Instructions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -394,63 +470,105 @@
   
 
 
-<h1 id="session-2-power-bi-copilot-the-aienhanced-developer-60-min">Session 2 – Power BI &amp; Copilot: The AI‑Enhanced Developer (60 min)</h1>
+<h1 id="session-2-power-bi-copilot-the-aienhanced-developer-60-min">Session 2 – Power BI &amp; Copilot: The AI‑Enhanced Developer (60 min)</h1>
+<h2 id="session-overview">Session Overview</h2>
+<p>In this session, you will connect Power BI Desktop to your semantic model, explore Copilot features, and practice using AI-powered analytics. By the end, you’ll be able to generate DAX, create dashboards, and summarize insights using Copilot.</p>
+<hr />
+<h2 id="step-by-step-instructions">Step-by-Step Instructions</h2>
 <ol>
 <li>
-<p>Launch Power BI Desktop. Sign in with the same tenant credentials.</p>
-<p><img alt="Power BI Desktop" src="../../assets/img/desktop_login.png" />
-<img alt="Desktop Copilot" src="../../assets/img/desktop_copilot.png" /></p>
+<p><strong>Launch Power BI Desktop</strong><br />
+   Sign in with your organizational credentials.</p>
+<p><img alt="Power BI Desktop login screen" src="../../assets/img/desktop_login.png" />
+<img alt="Copilot icon in Power BI Desktop" src="../../assets/img/desktop_copilot.png" /></p>
 </li>
 <li>
-<p>Connect to the semantic model you just published: <strong>OneLake catalog</strong> ► select <strong>lh_demo</strong> (make sure it is the semantic model).</p>
-<p><img alt="OneLake Catalog" src="../../assets/img/onelake_catalog.png" />
-<img alt="Select Model" src="../../assets/img/select_model.png" /></p>
+<p><strong>Connect to the Semantic Model</strong><br />
+   In Power BI Desktop, open the <strong>OneLake catalog</strong> and select <strong>direct lake demo</strong> (ensure it is the semantic model).</p>
+<p><img alt="OneLake Catalog selection" src="../../assets/img/onelake_catalog.png" />
+<img alt="Selecting the semantic model" src="../../assets/img/select_model.png" /></p>
 </li>
 <li>
-<p>Open the Copilot pane: <strong>Home ► Copilot</strong>. Ensure the Copilot preview toggle is ON.</p>
-<p><img alt="Copilot Pane" src="../../assets/img/copilot_preview.png" /></p>
+<p><strong>Open the Copilot Pane</strong><br />
+   Go to <strong>Home ► Copilot</strong>. Ensure the Copilot preview toggle is ON.</p>
+<p><img alt="Copilot Pane in Power BI" src="../../assets/img/copilot_preview.png" /></p>
 </li>
 <li>
-<p>Prompt practice #1: in Copilot type <strong>“Show total sales by product category.”</strong></p>
+<p><strong>Practice Prompt #1</strong><br />
+   In Copilot, type:<br />
+<code>Show total sales by product category.</code></p>
 </li>
 <li>
-<p>You will likely get this error:</p>
-<p><img alt="Q&amp;A Error" src="../../assets/img/qa_error.png" /></p>
+<p><strong>Troubleshoot Q&amp;A Error</strong><br />
+   If you receive an error, proceed to the next step.</p>
+<p><img alt="Q&amp;A Error message" src="../../assets/img/qa_error.png" /></p>
 </li>
 <li>
-<p>We need to turn on the Q&amp;A settings on the semantic model. Open your browser, find the semantic model, then click the ellipsis and select settings.</p>
-<p><img alt="Model Settings" src="../../assets/img/model_settings.png" /></p>
+<p><strong>Enable Q&amp;A Settings</strong><br />
+   In your browser, find the semantic model, click the ellipsis (<strong>...</strong>) and select <strong>Settings</strong>.</p>
+<p><img alt="Model Settings in Power BI Service" src="../../assets/img/model_settings.png" /></p>
 </li>
 <li>
-<p>Find Q&amp;A and check the box <strong>Turn on Q&amp;A to ask natural language questions about your data</strong> and select apply.</p>
-<p><img alt="Q&amp;A Settings" src="../../assets/img/qa_settings.png" />
-<img alt="Q&amp;A Settings On" src="../../assets/img/qa_settings_on.png" /></p>
+<p><strong>Turn On Q&amp;A</strong><br />
+   Find the Q&amp;A section and check the box <strong>Turn on Q&amp;A to ask natural language questions about your data</strong>. Click <strong>Apply</strong>.</p>
+<p><img alt="Q&amp;A Settings screen" src="../../assets/img/qa_settings.png" />
+<img alt="Q&amp;A Settings enabled" src="../../assets/img/qa_settings_on.png" /></p>
 </li>
 <li>
-<p>Now try the prompt again: <strong>“Show total sales by product category.”</strong></p>
-<p><img alt="Prompt 1" src="../../assets/img/prompt1_results.png" /> </p>
+<p><strong>Retry the Prompt</strong><br />
+   Try the prompt again:<br />
+<code>Show total sales by product category.</code></p>
+<p><img alt="Prompt 1 results" src="../../assets/img/prompt1_results.png" /></p>
 </li>
 <li>
-<p>Generate DAX: prompt <strong>“Create year‑over‑year sales growth measure.”</strong> Then ask <strong>“Explain this DAX.”</strong> Notice that the result isn't helpful.</p>
-<p><img alt="Prompt 2" src="../../assets/img/prompt2_results1.png" /></p>
+<p><strong>Generate DAX with Copilot</strong><br />
+   Prompt:<br />
+<code>Create year-over-year sales growth measure.</code><br />
+   Then ask:<br />
+<code>Explain this DAX.</code><br />
+<em>Note: The explanation may not always be helpful.</em></p>
+<p><img alt="Prompt 2 results" src="../../assets/img/prompt2_results1.png" /></p>
 </li>
 <li>
-<p>We need to use the DAX query view page in Power BI Desktop. It is the icon in the left menu, below the Model view. Click the Copilot icon and type: <strong>“Create year‑over‑year sales growth measure.”</strong> Then click the <strong>“Explain this query”</strong> button.</p>
-<p><img alt="Prompt 2.1" src="../../assets/img/prompt2_results2.png" /> 
-<img alt="DAX Explain" src="../../assets/img/dax_explain.png" /></p>
+<p><strong>Use DAX Query View</strong><br />
+    In Power BI Desktop, open the DAX Query View (icon below Model view). Click the Copilot icon and type:<br />
+<code>Create year-over-year sales growth measure.</code><br />
+    Then click <strong>Explain this query</strong>. Create the measures in your semantic model.</p>
+<p><img alt="Prompt 2.1 results" src="../../assets/img/prompt2_results2.png" />
+<img alt="DAX Explain screenshot" src="../../assets/img/dax_explain.png" /></p>
 </li>
 <li>
-<p>Back on the Report view, create a full report page: prompt <strong>“Create an executive dashboard showing total sales, profit %, and top 5 products.”</strong> Let Copilot lay it out, then tweak titles or chart types manually. Your results may vary.</p>
-<p><img alt="Prompt 3" src="../../assets/img/prompt3_results.png" /></p>
+<p><strong>Create a Dashboard with Copilot</strong><br />
+    In Report view, prompt:<br />
+<code>Create an executive dashboard showing total sales, profit %, and top 5 products.</code><br />
+    Let Copilot lay out the report, then tweak titles or chart types as needed.<br />
+<em>Your results may vary.</em></p>
+<p><img alt="Prompt 3 results" src="../../assets/img/prompt3_results.png" /></p>
 </li>
 <li>
-<p>Generate a narrative: prompt <strong>“Summarize this page in three bullet points.”</strong> Note if the summary makes sense. Your results may vary.</p>
-<p><img alt="Prompt 4" src="../../assets/img/prompt4_results.png" /></p>
+<p><strong>Generate a Narrative</strong><br />
+    Prompt:<br />
+<code>Summarize this page in three bullet points.</code><br />
+<em>Note if the summary makes sense. Your results may vary.</em></p>
+<p><img alt="Prompt 4 results" src="../../assets/img/prompt4_results.png" /></p>
 </li>
 <li>
-<p>Debrief: jot down what Copilot nailed and where it stumbled. Bring examples to the next lab where we will optimize the model further.</p>
+<p><strong>Debrief and Reflect</strong><br />
+    With your group, discuss:</p>
+<ul>
+<li>What did Copilot do well?</li>
+<li>Where did it struggle?</li>
+<li>Bring examples to the next lab, where we will optimize the model further.</li>
+</ul>
 </li>
 </ol>
+<hr />
+<p><strong>Tips for Success:</strong>
+- If you get stuck, ask your instructor or a classmate for help.
+- Pause at checkpoints to review your progress.
+- Share your screen if you need troubleshooting assistance.</p>
+<hr />
+<p>Let your instructor know if you need further clarification or support!</p>
 
 
 
