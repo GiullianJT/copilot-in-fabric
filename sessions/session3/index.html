@@ -331,6 +331,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Session 3
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -342,6 +355,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Instructions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Success
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -375,6 +434,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-by-step-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step-by-Step Instructions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Success
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -392,16 +486,89 @@
   
 
 
-<h1 id="session-3-power-bi-copilot-the-aienhanced-analyst-60-min">Session 3 – Power BI &amp; Copilot: The AI‑Enhanced Analyst (60 min)</h1>
+<h1 id="session-3-power-bi-copilot-the-aienhanced-analyst-60-min">Session 3 – Power BI &amp; Copilot: The AI‑Enhanced Analyst (60 min)</h1>
+<h2 id="session-overview">Session Overview</h2>
+<p>In this session, you will optimize a semantic model and use Copilot to enhance your analytics experience in Power BI. By the end, you’ll be able to improve model usability, configure Q&amp;A, and apply best practices for AI-powered analytics.</p>
+<hr />
+<h2 id="step-by-step-instructions">Step-by-Step Instructions</h2>
 <ol>
-<li>Back in <strong>Model view</strong> (Power BI Desktop or Service), add descriptions to measures and rename any leftover techy columns.</li>
-<li>Open <strong>Q&amp;A Tooling</strong> (gear icon) ► <strong>Synonyms</strong> tab. Add 3‑5 business synonyms per key field (e.g., “revenue” for <em>Sales Amount</em>). [Screenshot]</li>
-<li>Hide key columns and rename any cryptic columns to friendly business names (e.g., “Prod_ID” → “Product ID”).</li>
-<li>Checkpoint: verify all tables are related, names are readable, and no errors appear in the model.</li>
-<li>Save / Publish the updated model back to the workspace.</li>
-<li>Re‑run two prompts from Session 2 and compare the visuals and answers. Expect fewer mismatches.</li>
-<li>Compile a best‑practice checklist with your table‑mates: clear names, synonyms, star schema, and realistic expectations of Copilot.</li>
+<li>
+<p><strong>Open the Semantic Model</strong><br />
+   Download the provided content (<a href="../../downloads/Power%20BI.zip">Download here</a>) and open the <strong>Copilot in Fabric</strong> Power BI Desktop file.</p>
+<p><img alt="Power BI Desktop with Copilot in Fabric file open" src="../../assets/img/course_content.png" /></p>
+</li>
+<li>
+<p><strong>Copy the Lakehouse SQL Analytics Endpoint</strong><br />
+   In your Lakehouse, click the ellipsis next to the SQL Analytics endpoint and select <strong>Copy connection string</strong>.</p>
+<p><img alt="Copying SQL Analytics endpoint in Lakehouse" src="../../assets/img/sql_endpoint.png" /></p>
+</li>
+<li>
+<p><strong>Edit Parameters in Power BI Desktop</strong><br />
+   In Power BI Desktop, go to <strong>Edit Parameters</strong>. Paste the connection string into the <strong>server</strong> parameter.  </p>
+<blockquote>
+<p><em>Tip: If your Lakehouse is named differently than <code>lh_demo</code>, update the database parameter accordingly. Click </em><em>OK</em><em> and then </em><em>Apply changes</em><em>.</em></p>
+</blockquote>
+<p><img alt="Edit Parameters dialog in Power BI Desktop" src="../../assets/img/edit_parameters.png" />
+<img alt="Pasting server connection string" src="../../assets/img/paste_server.png" /></p>
+</li>
+<li>
+<p><strong>Add Descriptions to Measures</strong><br />
+   In <strong>Model view</strong> (Power BI Desktop or Service), add clear descriptions to your measures to improve model usability.</p>
+<p><img alt="Adding measure descriptions in Model view" src="../../assets/img/measure_description.png" />
+<img alt="Copilot-generated description example" src="../../assets/img/copilot_description.png" /></p>
+</li>
+<li>
+<p><strong>Configure Q&amp;A Synonyms</strong><br />
+   Open <strong>Q&amp;A Tooling</strong> (gear icon) and go to the <strong>Synonyms</strong> tab. Add 3–5 business synonyms for each key field (e.g., add "revenue" as a synonym for <em>Sales Amount</em>).</p>
+<p><img alt="Q&amp;A button in Power BI" src="../../assets/img/qa_button.png" />
+<img alt="Q&amp;A setup screen" src="../../assets/img/qa_setup.png" />
+<img alt="Q&amp;A relationships example" src="../../assets/img/qa_relationships.png" /><br />
+<a href="https://learn.microsoft.com/en-us/power-bi/natural-language/q-and-a-best-practices">🔗 Q&amp;A Best Practices (Microsoft Docs)</a></p>
+</li>
+<li>
+<p><strong>Clean Up Field Names</strong><br />
+   Hide key columns and rename any cryptic columns to friendly business names (e.g., rename <code>ProductID</code> to <strong>Product ID</strong>).</p>
+</li>
+<li>
+<p><strong>Checkpoint: Review Your Model</strong><br />
+   Verify that all tables are related, names are readable, and no errors appear in the model.  </p>
+<blockquote>
+<p><em>Discuss with your group: Does your model meet best practices?</em></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Publish the Updated Model</strong><br />
+   Save and publish the updated model back to your workspace.<br />
+<em>Optional: Compare your model to the </em><em>Copilot in Fabric – Clean</em><em> model included in the downloaded content.</em></p>
+</li>
+<li>
+<p><strong>Practice Prompts</strong><br />
+   Re-run the following prompts from Session 2 and compare the visuals and answers. You should see improved results.<br />
+<em>Copy each prompt using the copy button:</em></p>
+<p><code>text
+Show total sales by product category.</code></p>
+<p><code>text
+Create year-over-year sales growth measure. Explain the DAX.</code></p>
+<p><code>text
+Create an executive dashboard showing total sales, profit %, and top 5 products.</code></p>
+<p><code>text
+Summarize this page in three bullet points.</code></p>
+</li>
+<li>
+<p><strong>Best Practices Reflection</strong><br />
+    With your table-mates, compile a checklist of best practices: clear names, synonyms, star schema, and realistic expectations for Copilot.</p>
+</li>
 </ol>
+<hr />
+<h2 id="tips-for-success">Tips for Success</h2>
+<ul>
+<li><strong>Ask questions!</strong> If you get stuck, raise your hand or ask a neighbor.</li>
+<li><strong>Pause at checkpoints</strong> to review your progress.</li>
+<li><strong>Share your screen</strong> if you need help troubleshooting.</li>
+<li><strong>Collaborate</strong> with your group for the reflection activity.</li>
+</ul>
+<hr />
+<p>Let your instructor know if you need further assistance or clarification!</p>
 
 
 
