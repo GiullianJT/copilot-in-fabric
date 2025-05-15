@@ -64,7 +64,7 @@ Create a Lakehouse, import data, and transform it with a Dataflow Gen2.
     ![Select Dataflow](../assets/img/select_dataflow.png)
 
 10. **Import the `df_demo.pqt` file**  
-    [Download the template](../downloads/df_demo.pqt) if needed.
+    [Download the template](../downloads/df_demo_2.pqt) if needed.
 
 11. **Configure the Lakehouse Connection**  
     Click the yellow button, sign in if needed, and click **Create**.
