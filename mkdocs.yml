@@ -11,6 +11,6 @@ nav:
       - Session 3: sessions/session3.md
 plugins:
   - search
-  - material-extensions
+  - glightbox
 #   - pdf-export        # exports every page to /pdf/
 
