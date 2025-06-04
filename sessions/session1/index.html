@@ -16,7 +16,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
       
 
@@ -50,7 +50,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -545,13 +554,13 @@
 <p>Follow along in your own environment or just watch.</p>
 <ol>
 <li>
-<p><strong>Locate the Copilot icon</strong> on the left navigation rail and inside Lakehouse/Notebook experiences. Confirm both exist.</p>
-<p><img alt="Copilot in Lakehouse navigation" src="../../assets/img/copilot_in_lakehouse.png" /></p>
+<p><strong>Locate the Copilot icon</strong> inside the Lakehouse SQL analytics endpoint experience. It will be in the top ribbon as pictured below.</p>
+<p><a class="glightbox" href="../../assets/img/copilot_in_lakehouse.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Copilot in Lakehouse navigation" src="../../assets/img/copilot_in_lakehouse.png" /></a></p>
 </li>
 <li>
-<p><strong>Open Copilot in Power BI Service.</strong><br />
-   Open any existing report and open the Copilot pane (“Ask data questions”) to see Copilot inside reports.</p>
-<p><img alt="Copilot for Report Creation in Power BI" src="../../assets/img/copilot_report_creation.png" /></p>
+<p><strong>Open Copilot in the Power BI Service.</strong><br />
+   Open any existing report and open the Copilot pane to see Copilot inside reports by clicking on the Copilot icon in the top ribbon as pictured below.</p>
+<p><a class="glightbox" href="../../assets/img/copilot_report_creation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Copilot for Report Creation in Power BI" src="../../assets/img/copilot_report_creation.png" /></a></p>
 </li>
 </ol>
 <hr />
@@ -559,60 +568,60 @@
 <p>Create a Lakehouse, import data, and transform it with a Dataflow Gen2.</p>
 <ol>
 <li>
-<p><strong>Navigate to the workspace list</strong> and select <strong>My Workspace</strong>.</p>
-<p><img alt="Workspace Navigation" src="../../assets/img/workspace_navigation.png" /></p>
+<p><strong>Navigate to the workspace list</strong> and select <strong>My Workspace</strong> (You may also use a standard workspace as long as it is on Fabric or Premium Capacity).</p>
+<p><a class="glightbox" href="../../assets/img/workspace_navigation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Workspace Navigation" src="../../assets/img/workspace_navigation.png" /></a></p>
 </li>
 <li>
 <p><strong>Create a Lakehouse:</strong><br />
-   Click <strong>New ► Lakehouse</strong>, name it <strong>lh_demo</strong>, then click <strong>Create</strong>.</p>
-<p><img alt="Create New Item" src="../../assets/img/create_item.png" /></p>
+   Click <strong>New item</strong> to open the artifact library.</p>
+<p><a class="glightbox" href="../../assets/img/create_item.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Create New Item" src="../../assets/img/create_item.png" /></a></p>
 </li>
 <li>
 <p><strong>Search for "Lakehouse"</strong> and select the Lakehouse option.</p>
-<p><img alt="Search Lakehouse" src="../../assets/img/search_lakehouse.png" />
-<img alt="Select Lakehouse" src="../../assets/img/select_lakehouse.png" /></p>
+<p><a class="glightbox" href="../../assets/img/search_lakehouse.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Search Lakehouse" src="../../assets/img/search_lakehouse.png" /></a></p>
 </li>
 <li>
 <p><strong>Name it <code>lh_demo</code></strong> and click <strong>Create</strong>.</p>
-<p><img alt="Lakehouse Creation" src="../../assets/img/create_lakehouse.png" /></p>
+<p><a class="glightbox" href="../../assets/img/create_lakehouse.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Lakehouse Creation" src="../../assets/img/create_lakehouse.png" /></a></p>
 </li>
 <li>
 <p><strong>Upload the provided Data folder</strong><br />
-<a href="../../downloads/Content.zip">Download here</a> and upload into <strong>/Files</strong>.<br />
-   Right-click on the <strong>/Files</strong> folder in the Lakehouse and select <strong>Upload Folder</strong>.</p>
-<p><img alt="Upload Folder" src="../../assets/img/upload_folder.png" /></p>
+<a href="../../downloads/Content.zip">Download here</a> and upload into <strong>/Files</strong>. Right-click on the <strong>/Files</strong> folder in the Lakehouse and select <strong>Upload Folder</strong>.</p>
+<p><a class="glightbox" href="../../assets/img/upload_folder.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Upload Folder" src="../../assets/img/upload_folder.png" /></a></p>
 </li>
 <li>
-<p><strong>Select "Overwrite existing files"</strong> and then click <strong>Upload</strong>.</p>
-<p><img alt="Overwrite Existing Files" src="../../assets/img/overwrite_existing.png" />
-<img alt="Upload Folder Now" src="../../assets/img/upload_folder_now.png" /></p>
+<p>Click the folder icon and browse to select the data files you downloaded. <strong>Select "Overwrite existing files"</strong> and then click <strong>Upload</strong>.</p>
+<p><a class="glightbox" href="../../assets/img/overwrite_existing.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Overwrite Existing Files" src="../../assets/img/overwrite_existing.png" /></a>
+<a class="glightbox" href="../../assets/img/upload_folder_now.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Upload Folder Now" src="../../assets/img/upload_folder_now.png" /></a></p>
 </li>
 <li>
 <p><strong>Create a Dataflow Gen2</strong><br />
    Click <strong>New Item</strong> and search for <strong>Dataflow</strong>.</p>
-<p><img alt="Create New Item for Dataflow" src="../../assets/img/create_item.png" />
-<img alt="Search Dataflow" src="../../assets/img/search_dataflow.png" />
-<img alt="Select Dataflow" src="../../assets/img/select_dataflow.png" /></p>
+<p><a class="glightbox" href="../../assets/img/create_item.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Create New Item for Dataflow" src="../../assets/img/create_item.png" /></a>
+<a class="glightbox" href="../../assets/img/search_dataflow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Search Dataflow" src="../../assets/img/search_dataflow.png" /></a>
+<a class="glightbox" href="../../assets/img/select_dataflow.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Select Dataflow" src="../../assets/img/select_dataflow.png" /></a></p>
 </li>
 <li>
 <p><strong>Import the <code>df_demo.pqt</code> file</strong><br />
-<a href="../../downloads/df_demo_2.pqt">Download the template</a> if needed.</p>
+<a href="../../downloads/df_demo.pqt">Download the template</a> if needed.</p>
+<p><a class="glightbox" href="../../assets/img/import_pqt.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Import Dataflow Gen2" src="../../assets/img/import_pqt.png" /></a></p>
 </li>
 <li>
 <p><strong>Configure the Lakehouse Connection</strong><br />
     Click the yellow button, sign in if needed, and click <strong>Create</strong>.</p>
-<p><img alt="Configure Connection" src="../../assets/img/configure_connection.png" /></p>
+<p><a class="glightbox" href="../../assets/img/configure_connection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Configure Connection" src="../../assets/img/configure_connection.png" /></a>
+<a class="glightbox" href="../../assets/img/lakehouse_connection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Lakehouse Connection" src="../../assets/img/lakehouse_connection.png" /></a></p>
 </li>
 <li>
 <p><strong>Update the Source Files query</strong><br />
     Click the gear icon next to the last Navigation step and select the <strong>Files</strong> folder in the Lakehouse you created earlier.</p>
-<p><img alt="Navigation Settings" src="../../assets/img/navigation_settings.png" />
-<img alt="Change Lakehouse" src="../../assets/img/change_lakehouse.png" /></p>
+<p><a class="glightbox" href="../../assets/img/navigation_settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Navigation Settings" src="../../assets/img/navigation_settings.png" /></a>
+<a class="glightbox" href="../../assets/img/change_lakehouse.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Change Lakehouse" src="../../assets/img/change_lakehouse.png" /></a></p>
 </li>
 <li>
 <p><strong>Add a Default Data Destination</strong><br />
     Bind the tables as shown in the screenshot below.</p>
-<p><img alt="Bind Tables" src="../../assets/img/bind_tables.png" /></p>
+<p><a class="glightbox" href="../../assets/img/bind_tables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Bind Tables" src="../../assets/img/bind_tables.png" /></a></p>
 </li>
 <li>
 <p><strong>Publish the dataflow.</strong></p>
@@ -620,19 +629,19 @@
 <li>
 <p><strong>Generate a Semantic Model</strong><br />
     In the Lakehouse, click <strong>New semantic model</strong>, select your tables, and click <strong>Create</strong>. Name the new model <strong>direct lake demo</strong>.</p>
-<p><img alt="New Semantic Model" src="../../assets/img/new_semantic_model.png" />
-<img alt="Select Tables" src="../../assets/img/select_tables.png" /></p>
+<p><a class="glightbox" href="../../assets/img/new_semantic_model.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="New Semantic Model" src="../../assets/img/new_semantic_model.png" /></a>
+<a class="glightbox" href="../../assets/img/select_tables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Select Tables" src="../../assets/img/select_tables.png" /></a></p>
 </li>
 <li>
 <p><strong>Open Model view</strong><br />
     Create 1‑many relationships to match the screenshot below.</p>
-<p><img alt="Semantic Model Relationships" src="../../assets/img/semantic_model.png" /></p>
+<p><a class="glightbox" href="../../assets/img/semantic_model.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Semantic Model Relationships" src="../../assets/img/semantic_model.png" /></a></p>
 </li>
 <li>
 <p><strong>Use Copilot to create a report</strong><br />
     Prompt:<br />
 <code>"Create me a report to show sales over time including both high-level and detailed information."</code></p>
-<p><img alt="Copilot Report Creation" src="../../assets/img/copilot_report_creation.png" /></p>
+<p><a class="glightbox" href="../../assets/img/copilot_report_creation.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Copilot Report Creation" src="../../assets/img/copilot_report_creation.png" /></a></p>
 </li>
 </ol>
 <hr />
@@ -697,11 +706,13 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
